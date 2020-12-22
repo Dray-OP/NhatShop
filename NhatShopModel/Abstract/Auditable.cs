@@ -1,9 +1,9 @@
 ﻿using System;
 using System.ComponentModel.DataAnnotations;
 
-namespace TeduShop.Model.Abstract
+namespace NhatShop.Model.Abstract
 {
-    public abstract class Auditable : IAuditable
+    public abstract class Auditable 
     {
         public DateTime? CreatedDate { set; get; }
 
