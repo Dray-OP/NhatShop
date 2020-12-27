@@ -2,6 +2,7 @@
 
 namespace NhatShop.Model.Abstract
 {
+    // không nhất thiết phải dùng interface ở đây
     public interface IAuditable
     {
         DateTime? CreatedDate { set; get; }

@@ -18,6 +18,7 @@ namespace NhatShop.Model.Models
 
         public decimal Price { set; get; }
 
+        // để liên kết với bảng cha
         [ForeignKey("OrderID")]
         public virtual Order Order { set; get; }
 

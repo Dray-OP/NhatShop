@@ -10,7 +10,7 @@ namespace NhatShop.Data.Infrastructure
 {
     public class NhatShopDbContext : DbContext
     {
-        public NhatShopDbContext() : base("NhatShopConnection")
+        public NhatShopDbContext() : base("name=NhatShopConnection")
         {
             // load bảng cha không ra bảng con nữa
             this.Configuration.LazyLoadingEnabled = false;
