@@ -5,8 +5,8 @@ using System.Linq;
 
 namespace NhatShop.Data.Repositories
 {
-    // có phương thức nào khác RepositoryBase thì khởi tạo ở đây
-    public interface IProductCategoryRepository
+    // có phương thức nào khác RepositoryBase thì khởi tạo ở interface IProductCategoryRepository
+    public interface IProductCategoryRepository : IRepository<ProductCategory>
     {
         IEnumerable<ProductCategory> GetListAlias(string alias); 
     }

@@ -43,11 +43,12 @@ namespace NhatShop.Data.Infrastructure
             dbSet.Attach(entity);
             dataContext.Entry(entity).State = EntityState.Modified;
         }
-
+        // delete theo class
         public virtual T Delete(T entity)
         {
             return dbSet.Remove(entity);
         }
+        // delete theo id tự định nghĩa
         public virtual T Delete(int id)
         {
             var entity = dbSet.Find(id);

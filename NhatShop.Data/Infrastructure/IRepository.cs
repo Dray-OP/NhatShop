@@ -15,7 +15,7 @@ namespace NhatShop.Data.Infrastructure
 
         // Marks an entity to be removed
         T Delete(T entity);
-
+        // overload (hay thêm 2 phương thức)
         T Delete(int id);
 
         //Delete multi records
