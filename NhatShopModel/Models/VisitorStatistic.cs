@@ -4,6 +4,7 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace NhatShop.Model.Models
 {
+    // thống kê người dùng
     [Table("VisitorStatistics")]
     public class VisitorStatistic
     {

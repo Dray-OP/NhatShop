@@ -3,6 +3,7 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace NhatShop.Model.Models
 {
+    // lưu thông tin cấu hình
     [Table("SystemConfigs")]
     public class SystemConfig
     {
