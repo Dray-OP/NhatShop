@@ -30,6 +30,7 @@ namespace NhatShop.Model.Models
         [MaxLength(256)]
         public string Image { set; get; }
 
+        //img nên để là xml
         [Column(TypeName = "xml")]
         public string MoreImages { set; get; }
 

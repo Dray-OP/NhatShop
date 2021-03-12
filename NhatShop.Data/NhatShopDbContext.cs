@@ -10,11 +10,13 @@ namespace NhatShop.Data.Infrastructure
 {
     public class NhatShopDbContext : DbContext
     {
+        // name = key-conection
         public NhatShopDbContext() : base("name=NhatShopConnection")
         {
             // load bảng cha không ra bảng con nữa
             this.Configuration.LazyLoadingEnabled = false;
         }
+        // khai báo
         public DbSet<Footer> Footers { set; get; }
         public DbSet<Menu> Menus { set; get; }
         public DbSet<MenuGroup> MenuGroups { set; get; }

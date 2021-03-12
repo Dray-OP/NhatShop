@@ -47,7 +47,7 @@ namespace NhatShop.Model.Models
         //[ForeignKey("CustomerId")]
         //public virtual ApplicationUser User { set; get; }
 
-        // cả bảng cha và bảng con đều phải trỏ đến
+        // cả bảng cha và bảng con đều phải trỏ đến <class> name-table
         public virtual IEnumerable<OrderDetail> OrderDetails { set; get; }
     }
 }

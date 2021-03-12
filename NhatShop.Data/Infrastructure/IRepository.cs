@@ -5,6 +5,7 @@ using System.Linq.Expressions;
 
 namespace NhatShop.Data.Infrastructure
 {
+    // T đại diện cho một kiểu bất kì
     public interface IRepository<T> where T : class
     {
         // Marks an entity as new

@@ -15,6 +15,7 @@ namespace NhatShop.Model.Abstract
         [MaxLength(256)]
         public string UpdatedBy { set; get; }
 
+        // cái này để SEO keyword và metaDescription
         [MaxLength(256)]
         public string MetaKeyword { set; get; }
 

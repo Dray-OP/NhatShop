@@ -8,6 +8,7 @@ using System.Threading.Tasks;
 
 namespace NhatShop.Data.Infrastructure
 {
+    // là một lớp ảo ; tối ưu các câu lệnh
     public abstract class RepositoryBase<T> : IRepository<T> where T : class
     {
         #region Properties

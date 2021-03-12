@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 namespace NhatShop.Data.Infrastructure
 {
+        // đảm bảo làm nhiều thao tác cùng một giao dich thành công và đảm bảo toàn vẹn dữ liệu giống session
     public class UnitOfWork : IUnitOfWork
     {
         private readonly IDbFactory dbFactory;
@@ -20,7 +21,6 @@ namespace NhatShop.Data.Infrastructure
         {
             get { return dbContext ?? (dbContext = dbFactory.Init()); }
         }
-
         public void Commit()
         {
             DbContext.SaveChanges();

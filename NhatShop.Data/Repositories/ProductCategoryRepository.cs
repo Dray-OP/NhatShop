@@ -10,6 +10,8 @@ namespace NhatShop.Data.Repositories
     {
         IEnumerable<ProductCategory> GetListAlias(string alias); 
     }
+    // các bảng trong responsitories kế thừa RepositoryBase để truyền vào ProductCategory để thực hiện các phương thức có sẵn trong đó
+    // và kế thừa interface ở trên để thực hiện các phương thức ở dưới
     public class ProductCategoryRepository : RepositoryBase<ProductCategory>, IProductCategoryRepository
     {
         public ProductCategoryRepository(IDbFactory dbFactory)

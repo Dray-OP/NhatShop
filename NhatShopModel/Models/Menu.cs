@@ -23,6 +23,7 @@ namespace NhatShop.Model.Models
         [Required]
         public int GroupID { set; get; }
 
+        // liên kết tới bản cha và bảng con phải có thuộc tính vitual
         [ForeignKey("GroupID")]
         public virtual MenuGroup MenuGroup { set; get; }
 
