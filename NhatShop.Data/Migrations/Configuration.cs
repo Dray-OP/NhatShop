@@ -1,4 +1,4 @@
-namespace NhatShop.Data.Migrations
+﻿namespace NhatShop.Data.Migrations
 {
     using System;
     using System.Data.Entity;
@@ -12,6 +12,7 @@ namespace NhatShop.Data.Migrations
             AutomaticMigrationsEnabled = false;
         }
 
+        // tạo dữ liệu mẫu ở đây
         protected override void Seed(NhatShop.Data.Infrastructure.NhatShopDbContext context)
         {
             //  This method will be called after migrating to the latest version.

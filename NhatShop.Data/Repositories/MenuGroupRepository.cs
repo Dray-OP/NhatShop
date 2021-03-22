@@ -14,7 +14,7 @@ namespace NhatShop.Data.Repositories
 
     public class MenuGroupRepository : RepositoryBase<MenuGroup>, IMenuGroupRepository
     {
-        public MenuGroupRepository(IDbFactory dbFactory) : base(dbFactory)
+        public MenuGroupRepository(IDbFactory dbFactory) : base(dbFactory)  
         {
         }
     }

@@ -39,7 +39,7 @@ namespace NhatShop.Model.Models
 
         [ForeignKey("CategoryID")]
         public virtual PostCategory PostCategory { set; get; }
-
+        //tham chiếu sang bảng posttags
         public virtual IEnumerable<PostTag> PostTags { set; get; }
     }
 }
